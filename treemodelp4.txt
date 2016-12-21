@@ -1,0 +1,1 @@
+(V (N (N a big cat) with (N a hat) on it) (V-aN sat down (R-aN on (N the bed))))
