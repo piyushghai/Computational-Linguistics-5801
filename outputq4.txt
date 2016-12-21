@@ -1,3 +1,2 @@
-B : three = 0.12
-B : two = 0.65
-B : one = 0.23
+RgivenIdata : ohio = 0.4
+RgivenIdata : phil = 0.6

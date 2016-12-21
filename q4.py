@@ -1,18 +1,37 @@
-import sys
 import re
+import sys
 import model
 
-A = model.Model('A')
-B = model.CondModel('B')
-PB = {}
+R = model.Model('R')
+W = model.Model('W')
+O = model.CondModel('O')
+ProbR = {}
+probRSum = 0.0
+
+def parseTrials(line):
+        m = re.search('^ *'+'I' + ' *' + '(.*)', line)
+        if m is not None:
+        	s = m.group(1)
+        	return re.split(' +', s)
 
 for line in sys.stdin:
-	A.read(line)
-	B.read(line)
+	R.read(line)
+	W.read(line)
+	O.read(line)
+	I = parseTrials(line)
 
-for a in A :
-	for b in B[a] :
-		PB[b] = PB.get(b, 0.0) + (A[a] * B[a][b])
+for r in R:
+	ProbR[r] = R[r]
+	for o in I:
+		prob = 0.0
+		for w in W:
+			prob = prob + (O[r,w][o] * W[w])
+		ProbR[r] = ProbR[r] * prob
+	probRSum = probRSum + ProbR[r]
 
-for b in PB :
-	print('B : ' +b+ ' = ' + str(PB[b]))
+for r in R:
+	ProbR[r] = ProbR[r] / probRSum
+	print('RgivenIdata : ' + r + ' = ' + str(round(ProbR[r], 3)))
+
+
+

@@ -1,0 +1,11 @@
+G : who = .1
+G : whom = .9
+P who : who = 1
+P who : whom = 0
+P whom : who = .2
+P whom : whom = .8
+
+C who : who = 1
+C who : whom = 0
+C whom : who = .5
+C whom : whom = .5

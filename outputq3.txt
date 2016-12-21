@@ -1,0 +1,4 @@
+PgivC whom : who = 0.0
+PgivC who : whom = 0.5625
+PgivC whom : whom = 1.0
+PgivC who : who = 0.4375

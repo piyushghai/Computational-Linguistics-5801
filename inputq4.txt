@@ -1,7 +1,9 @@
-A : on = .7
-A : off = .3
-B on : one = .2
-B on : two = .8
-B off : one = .3
-B off : two = .3
-B off : three = .4
+R : ohio = .5
+R : phil = .5
+W : /nek/ = .6
+W : /naek/ = .4
+O ohio /nek/ : [nek] = 1
+O phil /nek/ : [nek] = .667
+O phil /nek/ : [naek] = .333
+O ohio /naek/ : [naek] = 1
+O phil /naek/ : [naek] = 1
