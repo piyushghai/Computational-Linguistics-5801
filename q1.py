@@ -1,12 +1,12 @@
 import re
 import sys
 
-preTermMap = {}
-count = 0
+# a Tree consists of a category label 'c' and a list of child Trees 'ch'
+termNonTermMap = {}
+nonTermMap={}
 class Tree:
 
     def read(this,s):
-    	global count
         this.ch = []
         # a tree can be just a terminal symbol (a leaf)
         m = re.search('^ *([^ ()]+) *(.*)',s)
@@ -18,10 +18,9 @@ class Tree:
             s3 = re.split('\s+', s2)
             if len(s3) > 1:
                 nonTerminal = s3[0]
-                #Found Latest PreTerminal symbol
-                count = count + 1
-                if count == 1:
-                    preTermMap[nonTerminal] = preTermMap.get(nonTerminal, 0.0) + 1
+                nonTermMap[nonTerminal] = nonTermMap.get(nonTerminal, 0.0) + 1
+                for i in range(1,len(s3)):
+                    termNonTermMap[nonTerminal, s3[i]] = termNonTermMap.get((nonTerminal, s3[i]), 0.0) + 1
 
         if m != None:
             return m.group(2)
@@ -42,14 +41,8 @@ class Tree:
 
 # for each line in input
 for line in sys.stdin:
-	count = 0
-	t = Tree()
-	t.read(line)
+            t=Tree()
+            t.read(line)
 
-sum = 0
-for x in preTermMap:
-    sum = sum + preTermMap[x]
-
-for x in preTermMap:
-    print ('Y' + ' : ' + x + ' = ' + str(round((preTermMap[x]/sum), 8)))
-    
+for x,y in termNonTermMap:
+    print ('XgivY ' + x + ' : ' + y + ' = ' + str(round((termNonTermMap[x,y]/nonTermMap[x]),8)))

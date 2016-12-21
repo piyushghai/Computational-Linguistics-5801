@@ -2,36 +2,34 @@ import re
 import sys
 import model
 
-R = model.Model('R')
-W = model.Model('W')
-O = model.CondModel('O')
-ProbR = {}
-probRSum = 0.0
+PiY = model.Model('Y')
+ThetaX = model.CondModel('XgivY')
+ThetaY = model.CondModel('YgivY')
+yPrev = {}
 
-def parseTrials(line):
+def parseInput(line):
         m = re.search('^ *'+'I' + ' *' + '(.*)', line)
         if m is not None:
         	s = m.group(1)
         	return re.split(' +', s)
 
+## All models read in
 for line in sys.stdin:
-	R.read(line)
-	W.read(line)
-	O.read(line)
-	I = parseTrials(line)
+	PiY.read(line)
+	ThetaX.read(line)
+	ThetaY.read(line)
+	I = parseInput(line)
 
-for r in R:
-	ProbR[r] = R[r]
-	for o in I:
-		prob = 0.0
-		for w in W:
-			prob = prob + (O[r,w][o] * W[w])
-		ProbR[r] = ProbR[r] * prob
-	probRSum = probRSum + ProbR[r]
+for y in PiY:
+	yPrev[y] = PiY[y] * ThetaX[y][I[0]]
 
-for r in R:
-	ProbR[r] = ProbR[r] / probRSum
-	print('RgivenIdata : ' + r + ' = ' + str(round(ProbR[r], 3)))
+#For next part loop over all y i.e result in second question
+for t in range(1,len(I)):
+	yNext={}
+	for y0 in ThetaY:
+		for y1 in ThetaY[y0]:
+			yNext[y1] = yNext.get(y1,0.0) + (yPrev.get(y0, 0.0) * ThetaY[y0][y1] * ThetaX[y1][I[t]])
+	yPrev = yNext
 
-
-
+for y in yNext:	
+	print 'Y_fwd : ' + y + ' = ' + str(yNext[y])

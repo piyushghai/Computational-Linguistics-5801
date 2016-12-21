@@ -1,0 +1,5 @@
+preterminal 1 = D
+preterminal 2 = N-aD
+preterminal 3 = V-aN-bN
+preterminal 4 = D
+preterminal 5 = N-aD
