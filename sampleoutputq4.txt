@@ -1,0 +1,261 @@
+
+a)
+Lorem
+ipsum
+dolor
+sit
+amet
+no
+recusabo
+quaerendum
+nec
+ut
+debet
+incorrupte
+honestatis
+his
+at
+amet
+intellegebat
+vel
+Blandit
+accommodare
+at
+sea
+solum
+maiorum
+in
+nam
+Pri
+an
+odio
+integre
+eloquentiam
+No
+erant
+facete
+incorrupte
+has
+hinc
+soleat
+aperiam
+cum
+ex
+ea
+tantas
+ocurreret
+intellegam
+ius
+An
+nam
+senserit
+sadipscing
+ea
+nec
+sint
+atomorum
+Mea
+at
+debet
+mandamus
+sit
+numquam
+corpora
+incorrupte
+cu
+Possit
+petentium
+intellegat
+nec
+at
+et
+mea
+purto
+audiam
+Cum
+viris
+nostro
+luptatum
+id
+mei
+ut
+postea
+oblique
+scriptorem
+Illud
+animal
+est
+ut
+ne
+pri
+qualisque
+constituto
+
+b)
+intellegam 1
+recusabo 1
+cum 1
+soleat 1
+No 1
+Pri 1
+oblique 1
+ea 2
+constituto 1
+nec 3
+qualisque 1
+ut 3
+purto 1
+at 4
+sea 1
+in 1
+id 1
+intellegat 1
+petentium 1
+debet 2
+Cum 1
+sadipscing 1
+cu 1
+nostro 1
+est 1
+numquam 1
+ocurreret 1
+no 1
+Illud 1
+maiorum 1
+nam 2
+hinc 1
+solum 1
+animal 1
+Possit 1
+vel 1
+has 1
+Lorem 1
+atomorum 1
+luptatum 1
+postea 1
+his 1
+mea 1
+eloquentiam 1
+viris 1
+tantas 1
+et 1
+pri 1
+sint 1
+dolor 1
+mei 1
+corpora 1
+An 1
+scriptorem 1
+senserit 1
+erant 1
+mandamus 1
+Mea 1
+ius 1
+an 1
+amet 2
+ipsum 1
+audiam 1
+intellegebat 1
+ne 1
+quaerendum 1
+accommodare 1
+sit 2
+honestatis 1
+incorrupte 3
+aperiam 1
+Blandit 1
+integre 1
+facete 1
+odio 1
+ex 1
+
+c)
+incorrupte has 1
+maiorum in 1
+ipsum dolor 1
+an odio 1
+scriptorem Illud 1
+solum maiorum 1
+debet mandamus 1
+ut postea 1
+soleat aperiam 1
+sadipscing ea 1
+tantas ocurreret 1
+nec ut 1
+ex ea 1
+no recusabo 1
+No erant 1
+purto audiam 1
+honestatis his 1
+amet no 1
+cu Possit 1
+sint atomorum 1
+oblique scriptorem 1
+id mei 1
+Possit petentium 1
+mea purto 1
+nam senserit 1
+sit amet 1
+aperiam cum 1
+Lorem ipsum 1
+ocurreret intellegam 1
+at debet 1
+eloquentiam No 1
+postea oblique 1
+mei ut 1
+nec at 1
+sit numquam 1
+Pri an 1
+recusabo quaerendum 1
+ut ne 1
+his at 1
+intellegebat vel 1
+sea solum 1
+at et 1
+et mea 1
+intellegat nec 1
+at sea 1
+corpora incorrupte 1
+nostro luptatum 1
+pri qualisque 1
+qualisque constituto 1
+nam Pri 1
+quaerendum nec 1
+intellegam ius 1
+erant facete 1
+viris nostro 1
+Illud animal 1
+amet intellegebat 1
+ne pri 1
+ut debet 1
+ea nec 1
+vel Blandit 1
+est ut 1
+integre eloquentiam 1
+cum ex 1
+senserit sadipscing 1
+has hinc 1
+accommodare at 1
+mandamus sit 1
+luptatum id 1
+ius An 1
+incorrupte cu 1
+numquam corpora 1
+Mea at 1
+audiam Cum 1
+atomorum Mea 1
+debet incorrupte 1
+at amet 1
+facete incorrupte 1
+nec sint 1
+An nam 1
+animal est 1
+Blandit accommodare 1
+hinc soleat 1
+in nam 1
+Cum viris 1
+petentium intellegat 1
+dolor sit 1
+incorrupte honestatis 1
+ea tantas 1
+odio integre 1

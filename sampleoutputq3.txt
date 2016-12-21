@@ -1,0 +1,15 @@
+a)
+S qHappy
+F qHungry
+M qHappy voc qHungry
+M qHappy sil qHappy
+M qHungry voc qHungry
+M qHungry sil qHungry
+
+b)
+S qHungry
+M qHungry voc qHappy
+M qHappy sil qHappy
+M qHungry voc qHungry
+M qHungry sil qHungry
+F qHappy
