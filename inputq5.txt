@@ -1,0 +1,14 @@
+P : on = .7
+P : off = .3
+R on : fast = .6
+R on : slow = .4
+R off : fast = .5
+R off : slow = .5
+T on fast : [t] = .9
+T on fast : [d] = .1
+T on slow : [t] = .8
+T on slow : [d] = .2
+T off fast : [t] = .3
+T off fast : [d] = .7
+T off slow : [t] = .4
+T off slow : [d] = .6

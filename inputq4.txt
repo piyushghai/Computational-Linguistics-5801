@@ -1,0 +1,7 @@
+A : on = .7
+A : off = .3
+B on : one = .2
+B on : two = .8
+B off : one = .3
+B off : two = .3
+B off : three = .4
