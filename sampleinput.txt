@@ -1,0 +1,14 @@
+This is a line containing numbers.0
+100, 200, 300 are all numbers
+127.0.0.1 is my IP Address
+.....777 is a num
+,,,,,00000
+10 ,,,,,0000,0000,,,, is also a number
+@-This is not a number
+Yout total bill is $999.99
+And you don't have to pay anything to the bank.
+Mario wins!
+Mario 2.0
+Is abc123efg also a num ?
+0.5 and ,5677 should also be included here and so should be .6
+This is a very big number : 10,500,000,100

@@ -1,0 +1,29 @@
+## Author = Piyush Ghai (ghai.8@osu.edu)
+##To run this file type : make -f Makefile.txt sampleinput.numlines sampleinput.nonums sampleinput.numclass
+## Assuming there is a file called sampleinput.txt which serves as an input for this
+## This make file is a solution for Problem#5 of Ling 5801 : Problem Set 1
+
+## A number can consist of maximal sequence of ',','.', and digits. The ending of the sequence should be in a digit
+##This prints out all the lines containing numbers
+
+#Problem Number 5a
+%.numlines : %.txt
+	egrep '(,)*(\.)*[0-9]+((,)*[0-9]+)*((\.)*[0-9]+)*' $< > $@
+	# [0-9\.,]*[0-9] -- simpler regex for num
+	# [0-9] even more simple
+
+##This replaces numbers by NUM in a new file
+
+## Problem Number 5b
+%.nonums : %.txt
+	perl -pe 's/(,)*(\.)*[0-9]+((,)*[0-9]+)*((\.)*[0-9]+)*/NUM/g' $< > $@
+
+## This replaces numbers >=1000 by BIGNUM and numbers < 1000 by SMALLNUM in a new file
+## This also performs some preprocessing to clean the format the numbers might come in, eg : it cleans 
+## commas, decimal points from the input file	
+
+## Problem Number 3
+%.numclass : %.txt
+	perl -pe 's/((,)|([^0-9,]))(,+)((\.)*[0-9]+((,)*[0-9]+)*((\.)*[0-9]+)*)/\3\5/g' $< | perl -pe 's/([\.]+|[0-9]+(,[0-9]+)*)(\.[0-9]+)*/\1/g' | perl -pe 's/(\.{1})+[0-9]+/0/g' | perl -pe 's/([0-9]),([0-9])/\1\2/g' | perl -pe 's/(0*[1-9][0-9]{3,})/BIGNUM/g' | perl -pe 's/[0-9]+/SMALLNUM/g' >$@
+
+	#[0-9,]*[0-9,*]{3,}
